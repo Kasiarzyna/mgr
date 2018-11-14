@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="glowna.html">Home</a></li>
+        <ul><li><a href="kat1.html">Kategoria 1 </a></li
+        <li><a href="kat2.html">Kategoria 2</a></li>
+        <li><a href="kat3.html">Kategoria 3</a></li></ul>
+		<?php
+ 
+$arg = (int)$_GET['menu'];
+ 
+switch ($arg)
+{
+   case 1:
+      include('kat1.html');
+   break;
+ 
+   case 2:
+      include('kat2.html');
+   break;
+ 
+   case 3:
+      include('kat3.html');
+   break;
+ 
+   default:
+      include('glowna.html');
+   break;
+}
+ 
+?>
+		<li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+ <h3>Kategoria 1</h3>
+  <img src="kasia2.png" alt="Kasia zjadła obrazek" />
+  <p>kgfkjlvfdgsvddsv</p>
+</div>
+<footer style ="background-color:black">
+<h1 style = "color:white">Stopa</h1>
+</footer>
+</body>
+</html>
